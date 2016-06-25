@@ -19,7 +19,7 @@ raw %>%
     geom_bar(aes(x = mp), stat = "identity") +
     coord_flip() + theme_bw() +
     xlab("MP") + ylab("Number of petitions for 2nd EU Referendum") +
-    ggtitle("Top 30 Consituencies by re-referendum popularity")
+    ggtitle("Top 30 Consituencies by \n re-referendum popularity")
     
     
     
