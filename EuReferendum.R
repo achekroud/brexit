@@ -18,10 +18,9 @@ raw %>%
     ggplot(aes(mp, signature_count)) +
     geom_bar(aes(x = mp), stat = "identity") +
     coord_flip() + theme_bw() +
-    xlab("MP") + ylab("Number of petitions for 2nd EU Referendum") +
-    ggtitle("Top 30 Consituencies by \n re-referendum popularity")
+    labs( list(title = "Updated: 3.3m total signatures",
+          subtitle = "Top 30 Consituencies by re-referendum popularity",
+          x = "MP", y = "Number of petitions for 2nd EU Referendum") ) +
+    theme(plot.title = element_text(face="bold"))
+   
     
-    
-    
-    factor(fig_trails1$SNP,
-           levels = fig_trails1$SNP[order(fig_trails1$Importance)])
