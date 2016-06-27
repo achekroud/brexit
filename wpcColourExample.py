@@ -1,6 +1,5 @@
 import geojson
 import matplotlib.pyplot as plt
-from pprint import pformat
 from petitionIO import maxminValue, constitValue
 from colour import Color
 from math import ceil
