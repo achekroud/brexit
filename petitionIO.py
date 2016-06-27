@@ -18,8 +18,9 @@ def constitValue(constit , file):
 	constit: the constituency that is searched
 	'''
 	json_data=fileIO(file)
+	print constit
 	for x in range(len(json_data['data']['attributes']['signatures_by_constituency'])):
-		if constit == json_data['data']['attributes']['signatures_by_constituency'][x]['name'].replace(',',''):
+		if constit == json_data['data']['attributes']['signatures_by_constituency'][x]['name'].replace(',','').replace(' ','').lower():
 			return int(json_data['data']['attributes']['signatures_by_constituency'][x]['signature_count'])
 			
 
